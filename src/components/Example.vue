@@ -19,11 +19,22 @@ const HoverEffectOptions = computed(() => ({
         />
       </ClientOnly>
         <div class="max-w-[300px]">
+          <article class="mb-2 whitespace-pre-wrap">
           Hi there
 
           I recently started developing this library.
           Therefore, excuse me for not giving fully description
           How to use this library
+          </article>
+
+          <article>
+            I'm open to any kind of help
+            contact me on telegram me on <a href="https://t.me/sultondev" class="underline text-blue-300">telegram</a>
+          </article>
+
+          <article>
+            All copyrights and etc. will be written later
+          </article>
         </div>
     </div>
   </div>
