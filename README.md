@@ -1,6 +1,14 @@
-# Nuxt 3 Minimal Starter
+[Demo](https://vue-hover-effect.vercel.app/)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[![](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.npmjs.org%2Fvue-hover-effect%2Flatest&query=version&label=npm%40latest)](https://www.npmjs.com/package/vue-hover-effect)
+[![](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.npmjs.org%2Fdownloads%2Fpoint%2Flast-year%2Fvue-hover-effect&query=downloads&label=downloads&color=%233CB042)](https://www.npmjs.com/package/vue-hover-effect)
+<a href="https://volta.net/sultondev/vue-hover-effect"><img src="https://user-images.githubusercontent.com/904724/209143798-32345f6c-3cf8-4e06-9659-f4ace4a6acde.svg" alt="Volta board"></a>
+
+
+
+## vue-hover-effect official docs website
+
+---
 
 ## Setup
 
@@ -71,6 +79,3 @@ yarn preview
 # bun
 bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# vue-hover-effect.xyz
