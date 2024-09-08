@@ -11,6 +11,9 @@ dependencies:
   nuxt:
     specifier: ^3.13.1
     version: 3.13.1(vite@5.4.3)
+  primevue:
+    specifier: ^4.0.5
+    version: 4.0.5(vue@3.5.3)
   vue:
     specifier: latest
     version: 3.5.3
@@ -1528,7 +1531,6 @@ packages:
       '@primeuix/styled': 0.0.5
       '@primeuix/utils': 0.0.5
       vue: 3.5.3
-    dev: true
 
   /@primevue/icons@4.0.5(vue@3.5.3):
     resolution: {integrity: sha512-ZxR9W1wlAE2fTtUhrHyeMx5t0jNyAgxDcHPm0cNXpX8q1XF95rSM/qb48QKXIBDBrJ/xs57BcyCNADP/VDPY4g==}
@@ -1538,7 +1540,6 @@ packages:
       '@primevue/core': 4.0.5(vue@3.5.3)
     transitivePeerDependencies:
       - vue
-    dev: true
 
   /@primevue/metadata@4.0.5:
     resolution: {integrity: sha512-IydjQ4K1k4eJppBCmup/YPTpHWqJt05yuSIxLoCtk6h0ivljEIJ/TGScEciRjF5u4mIIhltyjdHCpexVnoCaIQ==}
@@ -5292,7 +5293,6 @@ packages:
       '@primevue/icons': 4.0.5(vue@3.5.3)
     transitivePeerDependencies:
       - vue
-    dev: true
 
   /process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
