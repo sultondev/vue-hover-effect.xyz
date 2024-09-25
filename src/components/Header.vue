@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { usePackageVersion } from '~/composables/packageVersion';
+const { $api } = useNuxtApp()
 
-const { version } = usePackageVersion('vue-hover-effect');
+const { data: packageModule } = await useAsyncData('modules', () => $api('/vue-hover-effect/latest'))
 </script>
 
 <template>
   <div class="">
-    <div class="relative m-4">
+    <nuxt-link to="/" class="relative m-4 max-w-48 block">
       <LazyIcon name="my-icon:vhe-icon" size="40" />
-      <Tag severity="warn" clas="absolute -bottom-6 -right-8" :value="version"></Tag>
-    </div>
+      <Tag severity="warn" class="absolute -bottom-6 right-2" :value="packageModule.version"></Tag>
+    </nuxt-link>
   </div>
 </template>

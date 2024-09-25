@@ -1,31 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // import config from "./config";
 // import modules from "~~/config/nuxt-modules";
-import Aura from "@primevue/themes/aura"
 export default defineNuxtConfig({
 	compatibilityDate: '2024-04-03',
 	devtools: { enabled: true },
 	modules: [
-	 '@vueuse/nuxt',
-	 'nuxt-og-image',
-	 '@primevue/nuxt-module',
-	 '@nuxtjs/tailwindcss',
-	 '@nuxt/icon',
+	  '@vueuse/nuxt',
+	  'nuxt-primevue',
+	  '@nuxtjs/tailwindcss',
+	  '@nuxt/icon',
+	  '@pinia/nuxt',
+	  '@nuxtjs/i18n',
 	],
 	primevue: {
-		options: {
-			ripple: true,
-			inputVariant: 'filled',
-			theme: {
-				preset: Aura,
-				options: {
-					prefix: 'p',
-					darkModeSelector: 'system',
-					cssLayer: false
-				}
-			}
-		}
+		cssLayerOrder: 'tailwind-base, primevue, tailwind-utilities'
 	},
+	css: [
+		'primevue/resources/themes/aura-light-green/theme.css'
+	],
 	icon: {
 		customCollections: [
 			{
@@ -35,6 +27,15 @@ export default defineNuxtConfig({
 				dir: './src/assets/custom-icons'
 			},
 		],
+	},
+	tailwindcss: {
+		cssPath: ['~/styles/tailwind.css', { injectPosition: "last" }],
+		configPath: 'config/tailwind.config.ts',
+		exposeConfig: {
+			level: 2
+		},
+		config: {},
+		viewer: true,
 	},
 	srcDir: 'src/',
 })

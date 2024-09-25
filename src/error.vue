@@ -1,8 +1,7 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
-  <div>
-    <Example/>
-  </div>
+  <div class="">error page</div>
 </template>

@@ -11,13 +11,11 @@ const HoverEffectOptions = computed(() => ({
 <template>
   <div class="container flex justify-center">
     <div class="flex gap-10 md:flex-row flex-col">
-      <ClientOnly>
         <HoverEffectContainer
           :options="HoverEffectOptions"
           height="400px"
           width="400px"
         />
-      </ClientOnly>
         <div class="max-w-[300px]">
           <article class="mb-2 whitespace-pre-wrap">
           Hi there

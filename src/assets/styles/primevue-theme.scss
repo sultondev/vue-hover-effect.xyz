@@ -1,0 +1,44 @@
+// Light mode variables
+:root {
+  --primary-color: #42b983;
+  --primary-color-text: #ffffff;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #e0e0e0;
+
+  // PrimeVue-specific variables
+  --primary-button-bg: var(--primary-color);
+  --primary-button-text-color: var(--primary-color-text);
+  --input-border-color: var(--border-color);
+}
+
+// Dark mode variables
+.dark-theme {
+  --primary-color: #42b983;
+  --primary-color-text: #ffffff;
+  --background-color: #2d2d2d;
+  --text-color: #eeeeee;
+  --border-color: #555555;
+
+  // PrimeVue-specific variables
+  --primary-button-bg: var(--primary-color);
+  --primary-button-text-color: var(--primary-color-text);
+  --input-border-color: var(--border-color);
+}
+
+// PrimeVue components styling
+.p-button {
+  background-color: var(--primary-button-bg);
+  color: var(--primary-button-text-color);
+}
+
+.p-inputtext {
+  border-color: var(--input-border-color);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
