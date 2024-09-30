@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import {HoverEffectContainer} from "vue-hover-effect";
+import HoverEffect from "vue-hover-effect";
+
+const { HoverEffectContainer } = HoverEffect;
 
 const HoverEffectOptions = computed(() => ({
   image1: '/lib-images/images/Img1.webp',
